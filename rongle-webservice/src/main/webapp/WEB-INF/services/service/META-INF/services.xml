@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+    <service name="sayHelloService">
+        <description>
+            sayHelloService:Spring POJO Axis2 Service Sample
+        </description>
+        <parameter name="ServiceClass">
+            com.soap.axis2.IServiceServer
+        </parameter>
+        <parameter name="ServiceObjectSupplier">
+            org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+        </parameter>
+        <parameter name="SpringBeanName">SayHelloService</parameter>
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+                             class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+        </messageReceivers>
+        <operation name="sayHello">
+            <messageReceiver
+                    class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+        </operation>
+    </service>
+</serviceGroup> 
+

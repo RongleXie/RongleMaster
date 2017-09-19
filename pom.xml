@@ -109,6 +109,21 @@
         </repository>
     </repositories>
 
+
+    <!--deploy地址-->
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:5555/nexus/content/repositories/thirdparty</url>
+        </repository>
+        <snapshotRepository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:5555/nexus/content/repositories/thirdparty</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <finalName>seeyon-${project.artifactId}</finalName>
         <resources>
@@ -159,7 +174,6 @@
             </plugins>
         </pluginManagement>
         <plugins>
-
             <!-- 编译插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

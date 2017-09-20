@@ -3,7 +3,7 @@ package com.ronglexie.licenseclient;
 import javax.swing.*;
 
 /**
- * @author wxt.xqr
+ * @author ronglexie
  * @version 2017-8-28
  */
 public class LicenceCreatorMain {

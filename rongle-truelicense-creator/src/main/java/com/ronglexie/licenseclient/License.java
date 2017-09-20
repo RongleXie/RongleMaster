@@ -12,7 +12,7 @@ import java.io.File;
 import java.util.*;
 
 /**
- * @author wxt.xqr
+ * @author ronglexie
  * @version 2017-8-22
  */
 public class License {

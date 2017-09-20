@@ -16,7 +16,7 @@ import java.util.prefs.Preferences;
 /**
  * VerifyLicense
  *
- * @author xieqingrong
+ * @author ronglexie
  */
 public class VerifyLicense {
     //common param

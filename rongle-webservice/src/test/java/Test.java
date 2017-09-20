@@ -6,7 +6,7 @@ import org.apache.axis2.rpc.client.RPCServiceClient;
 import javax.xml.namespace.QName;
 
 /**
- * @author wxt.xqr
+ * @author ronglexie
  * @version 2017-8-30
  */
 public class Test {

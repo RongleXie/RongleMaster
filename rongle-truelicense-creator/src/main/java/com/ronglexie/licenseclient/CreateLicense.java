@@ -19,7 +19,7 @@ import java.util.prefs.Preferences;
 /**
  * CreateLicense
  *
- * @author xieqingrong
+ * @author ronglexie
  */
 public class CreateLicense {
     //common param

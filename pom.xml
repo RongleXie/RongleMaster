@@ -100,7 +100,7 @@
         <repository>
             <id>Nexus Repos</id>
             <name>Nexus</name>
-            <url>http://localhost:5555/nexus/content/repositories/public/</url>
+            <url>http://192.168.1.10:5555/nexus/content/repositories/public/</url>
         </repository>
         <repository>
             <id>aliyun-repos</id>
@@ -115,17 +115,17 @@
         <repository>
             <id>releases</id>
             <name>Internal Releases</name>
-            <url>http://localhost:5555/nexus/content/repositories/thirdparty</url>
+            <url>http://192.168.1.10:5555/nexus/content/repositories/thirdparty</url>
         </repository>
         <snapshotRepository>
             <id>releases</id>
             <name>Internal Releases</name>
-            <url>http://localhost:5555/nexus/content/repositories/thirdparty</url>
+            <url>http://192.168.1.10:5555/nexus/content/repositories/thirdparty</url>
         </snapshotRepository>
     </distributionManagement>
 
     <build>
-        <finalName>seeyon-${project.artifactId}</finalName>
+        <finalName>RonglexieMaster-${project.version}</finalName>
         <resources>
             <resource>
                 <directory>src/main/java</directory>

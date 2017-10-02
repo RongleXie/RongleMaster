@@ -13,7 +13,7 @@ public class Test {
 
     @org.junit.Test
     public void sayHello() throws AxisFault {
-        String path = "http://localhost:8123/services/sayHelloService";
+        /*String path = "http://localhost:8123/services/sayHelloService";
         EndpointReference targetEPR = new EndpointReference(path);
         RPCServiceClient rpcServiceClient = new RPCServiceClient();
         Options options = rpcServiceClient.getOptions();
@@ -22,6 +22,6 @@ public class Test {
         QName opGetWeather = new QName("http://axis2.soap.com", "sayhello");
         Object[] response = rpcServiceClient.invokeBlocking(opGetWeather,
                 new Object[]{"zhangsan"}, new Class[]{String.class});
-        System.out.println(response[0]);
+        System.out.println(response[0]);*/
     }
 }

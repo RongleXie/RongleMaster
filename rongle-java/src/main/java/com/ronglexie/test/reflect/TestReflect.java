@@ -60,7 +60,6 @@ public class TestReflect {
             //通过反射API调用构造方法
             User user = clazz.newInstance();//无参构造方法
             System.out.println("User"+user);
-
             Constructor<User> constructor = clazz.getDeclaredConstructor(String.class,String.class,Integer.class);//有参构造方法
             User u1 = constructor.newInstance("u1","u1",1);
             System.out.println("U1"+u1.toString());
@@ -68,14 +67,14 @@ public class TestReflect {
             //通过反射API调用普通方法
             User u2 = clazz.newInstance();
             Method method = clazz.getDeclaredMethod("setId",String.class);
-            method.setAccessible(true);//设置此方法不需要做安全检查，可直接访问，用于访问私有方法
+            method.setAccessible(true);//设置后此方法不需要做安全访问检查，可直接访问，用于访问私有方法
             method.invoke(u2,"u2");
             System.out.println("U2:"+u2.toString());
 
             //通过反射API操作属性
             User u3 = clazz.newInstance();
             Field field = clazz.getDeclaredField("name");
-            field.setAccessible(true);//设置此属性不需要做安全检查，可直接访问，用于访问私有属性
+            field.setAccessible(true);//设置后此属性不需要做安全访问检查，可直接访问，用于访问私有属性
             field.set(u3,"u3");
             System.out.println("U3:"+u3.toString());
         } catch (Exception e) {

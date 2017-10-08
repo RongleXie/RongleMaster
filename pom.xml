@@ -14,6 +14,7 @@
         <module>rongle-webservice</module>
         <module>rongle-truelicense</module>
         <module>rongle-truelicense-creator</module>
+        <module>rongle-java</module>
     </modules>
 
     <properties>

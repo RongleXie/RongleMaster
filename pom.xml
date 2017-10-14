@@ -98,11 +98,11 @@
     </properties>
 
     <repositories>
-        <repository>
+        <!--<repository>
             <id>Nexus Repos</id>
             <name>Nexus</name>
             <url>http://192.168.1.10:5555/nexus/content/repositories/public/</url>
-        </repository>
+        </repository>-->
         <repository>
             <id>aliyun-repos</id>
             <name>Alyun</name>
@@ -113,16 +113,16 @@
 
     <!--deploy地址-->
     <distributionManagement>
-        <repository>
+        <!--<repository>
             <id>releases</id>
             <name>Internal Releases</name>
             <url>http://192.168.1.10:5555/nexus/content/repositories/thirdparty</url>
-        </repository>
-        <snapshotRepository>
+        </repository>-->
+        <!--<snapshotRepository>
             <id>releases</id>
             <name>Internal Releases</name>
             <url>http://192.168.1.10:5555/nexus/content/repositories/thirdparty</url>
-        </snapshotRepository>
+        </snapshotRepository>-->
     </distributionManagement>
 
     <build>
